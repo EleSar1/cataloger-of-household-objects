@@ -1,0 +1,32 @@
+{
+    "livingRoom": {
+        "objects": {
+            "TV": {
+                "category": "electronic"
+            },
+            "sofa": {
+                "category": "furniture"
+            }
+        }
+    },
+    "bedroom": {
+        "objects": {
+            "bed": {
+                "category": "furniture"
+            },
+            "book": {
+                "category": "personal"
+            }
+        },
+        "closet": {
+            "objects": {
+                "jacket": {
+                    "category": "clothing"
+                },
+                "shoes": {
+                    "category": "footwear"
+                }
+            }
+        }
+    }
+}

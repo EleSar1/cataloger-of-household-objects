@@ -1,0 +1,8 @@
+# Ignore Python cache folders
+__pycache__/
+
+# Ignore Python bytecode files
+*.pyc
+
+# Ignore virtual environment folder
+venv/
