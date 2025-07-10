@@ -55,5 +55,10 @@ def save_JSON_file(data: dict, filename: str):
         filename (str): The name of the file where the data will be saved.
     """
     
+    if not isinstance(data, dict):
+        raise TypeError("Expected 'data' to be a dictionary.")
+    if not isinstance(filename, str):
+        raise TypeError("Expected 'filename' to be a string.")
+    
     with open(filename, mode="w") as file:
         json.dump(data, file, indent=4)
