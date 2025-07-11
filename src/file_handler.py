@@ -44,7 +44,7 @@ def load_JSON_file(filename: str) -> dict:
     return file_info
 
 
-def save_JSON_file(data: dict, filename: str):
+def save_JSON_file(data: dict, filename: str) -> None:
 
     """
     Saves a dictionary to a JSON file with indentation for readability.

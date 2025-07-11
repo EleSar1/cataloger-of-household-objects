@@ -80,7 +80,7 @@ def modify_objects(data: dict, old_object: str, new_object: str=None, new_catego
     return False
         
 
-def explore_data(data: dict, level: int=0):
+def explore_data(data: dict, level: int=0) -> None:
 
     """
     Recursively prints the contents of a nested dictionary in a structured and indented format.

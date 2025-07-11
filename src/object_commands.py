@@ -2,9 +2,9 @@ from src.file_handler import save_JSON_file
 from src.handle_data import add_object, delete_objects, modify_objects
 
 
-def type_check(func):
+def type_check(func) -> function:
 
-    def wrapper(filename, data):
+    def wrapper(filename, data) -> function:
 
         if not isinstance(filename, str):
             raise TypeError("Expected a str for 'filename' parameter, got a different type.")
@@ -17,7 +17,7 @@ def type_check(func):
 
 
 @type_check
-def handle_object_addition(filename: str, data: dict):
+def handle_object_addition(filename: str, data: dict) -> None:
     
     print("Please, enter")
     location_path = []
@@ -47,7 +47,7 @@ def handle_object_addition(filename: str, data: dict):
 
 
 @type_check
-def handle_object_modification(filename: str, data: dict):
+def handle_object_modification(filename: str, data: dict) -> None:
     
     print("Press [1] to modify an object.")
     print("Press [2] to modify a category.")
@@ -89,7 +89,7 @@ def handle_object_modification(filename: str, data: dict):
 
 
 @type_check
-def handle_object_deletion(filename: str, data: dict):
+def handle_object_deletion(filename: str, data: dict) -> None:
     
     print("Which object do you want to delete?")
     key_to_delete = input("-> ")

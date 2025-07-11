@@ -3,7 +3,7 @@ from src.handle_data import explore_data
 from src.object_commands import handle_object_addition, handle_object_deletion, handle_object_modification
 
 
-def main():
+def main() -> None:
 
     filename = "data/homeObjects.json"
     data = load_JSON_file(filename)
